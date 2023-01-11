@@ -1,0 +1,37 @@
+<! doctype html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+
+<script>
+ function 伝言する(){
+if(入力内容.value === "本日私用により休みます"){
+  alert("いや、来いよ")
+入力内容.value = "今日行けます";
+}else{
+if(入力内容.value === "無限ループ"){
+  alert("その文字は使用できません「輪廻」でお試しください")
+入力内容.value = "輪廻";
+}else{
+if(入力内容.value === "輪廻"){
+  alert("その文字は使用できません「無限ループ」でお試しください")
+入力内容.value = "無限ループ";
+}else{
+if(入力内容.value === ""){
+  alert("内容を入れてください");
+}else{
+伝言エリア.innerText = 入力内容.value;
+  alert("伝言をセットしました");
+    }
+   }
+  }
+ }
+}
+</head>
+<body>
+ 伝言板
+ <p id="伝言エリア">伝言はまだありませんm9(^Д^)ﾌﾟｷﾞｬｰ</p>
+ <input id="入力内容"><button onclick="伝言する();">同意する</button>
+ </body>
+</html>
+</script>
